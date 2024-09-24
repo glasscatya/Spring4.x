@@ -16,6 +16,7 @@ public class UserService {
 
     public boolean hasMatchUser(String userName, String password) {
         int matchCount =userDao.getMatchCount(userName, password);
+        System.out.println("-------------matchCount------------: " + matchCount);
         return matchCount > 0;
     }
 
